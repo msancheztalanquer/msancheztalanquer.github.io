@@ -1,6 +1,6 @@
 body
 {
-	font-family:"Lucida Sans Typewriter","Lucida Console",Monaco,"Bitstream Vera Sans Mono",monospace;
+	font-family:'Open Sans', sans-serif;
 	font-weight:300;
 	font-size:13px;
 	color:#303030;
@@ -11,20 +11,71 @@ body
 	height: 100%;
 }
 
-a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-    color: #ffd034;
+a 
+{ 
+	cursor: pointer; 
+	cursor: hand; 
 }
 
 
 
 
+.decorator
+{
+	color: #B50009;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color:#303030;
+}
+
+a:hover {
+    text-decoration: none;
+	color:#808080;
+}
+
+#navigator
+{
+	margin: 0px 20px 0px 20px;
+	padding: 5px;
+	text-align: center;
+}
+
+#navigator li
+{
+	padding-left: 30px;
+	padding-right: 30px;
+	display: inline-block;
+	list-style-type: none;
+	cursor: pointer; cursor: hand;
+}
+
+#navigator-container
+{
+	border-top: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+	width: 100%;
+}
+
+#title
+{
+	font-size:30px;
+	line-height:35px
+}
 
 section
 {
 	height: 100%;
 	overflow: auto;
+	display: none;
 }
+
+#about
+{
+	display: block;
+}
+
 div
 {
 	display: block;
@@ -33,12 +84,12 @@ div
 .left
 {
 	float: left;
-	width: 30%;
+	width: 35%;
 }
 .right
 {
 	float: right;
-	width: 60%;
+	width: 65%;
 	background-color: inherit;
 }
 
@@ -76,7 +127,7 @@ h1,h2,h3,h4
 	margin:0px;
 	padding:0px;
 	font-weight:bold;
-	text-transform:uppercase
+	/**text-transform:uppercase**/
 }
 @media (max-width: 767px)
 {
@@ -87,8 +138,14 @@ h1,h2,h3,h4
 }
 h1
 {
-	font-size:70px;
-	line-height:78px
+	font-size:25px;
+	line-height:28px
+}
+
+li
+{
+	font-size:20px;
+	line-height:25px
 }
 @media (max-width: 767px){
 	h1
@@ -99,15 +156,15 @@ h1
 }
 h2
 {
-	font-size:50px;
-	line-height:55px
+	font-size:15px;
+	line-height:18px
 }
 @media (max-width: 767px)
 {
 	h2
 	{
-		font-size:35px;
-		line-height:35px;
+		font-size:20px;
+		line-height:25px;
 	}
 }
 h3
@@ -172,6 +229,7 @@ footer a:link
 .container
 {
 	margin: 20px 30px;
+	overflow: hidden;
 }
 
 .row
