@@ -1,8 +1,8 @@
 body
 {
-	font-family:'Open Sans', sans-serif;
+	font-family:'Merriweather', serif;
 	font-weight:300;
-	font-size:13px;
+	font-size:15px;
 	color:#303030;
 	line-height:26px;
 
@@ -16,8 +16,6 @@ a
 	cursor: pointer; 
 	cursor: hand; 
 }
-
-
 
 
 .decorator
@@ -61,7 +59,7 @@ a:hover {
 #title
 {
 	font-size:30px;
-	line-height:35px
+	line-height:35px;
 }
 
 section
@@ -86,6 +84,13 @@ div
 	float: left;
 	width: 35%;
 }
+
+.left p
+{
+	font-size:18px;
+	line-height:18px;
+}
+
 .right
 {
 	float: right;
@@ -133,7 +138,7 @@ h1,h2,h3,h4
 {
 	h1,h2,h3,h4
 	{
-		font-family:'Open Sans', sans-serif;
+		font-family:'Merriweather', serif;
 	}
 }
 h1
