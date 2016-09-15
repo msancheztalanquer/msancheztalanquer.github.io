@@ -17,6 +17,11 @@ a
 	cursor: hand; 
 }
 
+#viewport {
+	padding-top: 30px;
+    overflow: hidden;
+    width: 100%;
+}
 
 .decorator
 {
@@ -47,6 +52,8 @@ a:hover {
 	display: inline-block;
 	list-style-type: none;
 	cursor: pointer; cursor: hand;
+	font-size:20px;
+	line-height:25px
 }
 
 #navigator-container
@@ -60,6 +67,13 @@ a:hover {
 {
 	font-size:30px;
 	line-height:35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#about
+{
+	display: block;
 }
 
 section
@@ -69,20 +83,19 @@ section
 	display: none;
 }
 
-#about
+.container
 {
-	display: block;
-}
+	margin: 20px 30px;
+	overflow: hidden;
+	width: 960px;
+	margin: auto;
+	text-align:justify;
 
-div
-{
-	display: block;
 }
-
 .left
 {
 	float: left;
-	width: 35%;
+	width: 330px;
 }
 
 .left p
@@ -94,37 +107,14 @@ div
 .right
 {
 	float: right;
-	width: 65%;
+	width: 630px;
 	background-color: inherit;
 }
 
-@media (max-width: 767px)
+.external-frame
 {
-	.left
-	{
-		float : none;
-		width: 100%;
-	}
-	.right
-	{
-		float : none;
-		width: 100%;
-	}
-
-}
-
-#viewport {
-    overflow: hidden;
-    width: 100%;
-}
-
-@media (max-width: 767px)
-{
-	body
-	{
-		font-size:12px;
-		line-height:24px
-	}
+	width: 100%;
+	height: 600px;
 }
 
 h1,h2,h3,h4
@@ -134,44 +124,23 @@ h1,h2,h3,h4
 	font-weight:bold;
 	/**text-transform:uppercase**/
 }
-@media (max-width: 767px)
-{
-	h1,h2,h3,h4
-	{
-		font-family:'Merriweather', serif;
-	}
-}
+
 h1
 {
 	font-size:25px;
 	line-height:28px
 }
 
-li
-{
-	font-size:20px;
-	line-height:25px
-}
-@media (max-width: 767px){
-	h1
-	{
-		font-size:60px;
-		line-height:60px;
-	}
-}
+
+
 h2
 {
 	font-size:15px;
 	line-height:18px
 }
-@media (max-width: 767px)
-{
-	h2
-	{
-		font-size:20px;
-		line-height:25px;
-	}
-}
+
+
+
 h3
 {
 	font-size:22px;
@@ -192,20 +161,13 @@ h3 span
 
 footer
 {
-	padding:100px 0px;
+	padding:50px 0px;
 	text-align:center;
 	font-size:12px;
 	line-height:22px
 }
 
-@media (max-width: 767px)
 
-{
-	footer
-	{
-		padding:80px 0px
-	}
-}
 footer b{
 	font-size:14px;
 	font-weight:bold;
@@ -224,51 +186,101 @@ footer a:link
 	color:#303030;
 }
 
-.invert
+
+@media only screen and (max-width: 767px)
 {
-	color:#fff;
-	background-color:#303030;
-
-}
-
-.container
-{
-	margin: 20px 30px;
-	overflow: hidden;
-}
-
-.row
-{
-	width: 100%; 
-}
-
-.column-3
-{
-	float: left; 
-	width: 33%; 
-}
-
-
-
-.number-dark{color:#000000}.row:after{content:"";display:table;clear:both}.row 
-.column-2{width:500px;float:right;position:relative}
-@media (max-width: 1150px){.row .column-2{width:400px}}
-@media (max-width: 960px){.row .column-2{width:100%;float:none}}.row .column-2:first-child{float:left}
-@media (max-width: 960px)
-{
-	.row .column-2:first-child
+	h1
 	{
-		float:none
+		font-size:18px;
+		line-height:18px;
+	}
+	#title
+	{
+		font-size:25px;
+		line-height:30px;
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+    
+    #navigator li
+    {
+    	padding-left: 4px;
+    	padding-right: 4px;
+    	font-size:14px;
+		line-height:25px
+    }
+    
+
+	.container
+	{
+		padding-left: 5px;
+		width: 100%;
+	}
+
+	.left
+	{
+		float: none;
+		width: 100%;
+	}
+
+	.right
+	{	
+		float: none;
+		width: 100%;
+
+		background-color: inherit;
+	}
+	.phone-hide
+	{
+		display:none;
+	}
+
+	footer
+	{
+		padding:20px 0px;
 	}
 }
 
-.row .column-3
+@media only screen and (min-width: 767px) and (max-width: 961px)
 {
-	width:300px;
-	float:left;
-	position:relative;
-	margin-left:100px;
+	.container
+	{
+		width: 767px;
+	}
+
+	.left
+	{
+		float: left;
+		width: 266px;
+	}
+
+	.right
+	{	
+		float: right;
+		width: 500px;
+		background-color: inherit;
+	}
+
 }
 
-@media (max-width: 1150px){.row .column-3{width:250px;margin-left:60px}}
-@media (max-width: 960px){.row .column-3{width:100%;float:none;margin-bottom:80px;margin-left:0px}}.row .column-3:first-child{margin-left:0px}.loading{height:100%;overflow:hidden}.loader{background:#000000;position:fixed;width:100%;height:100%;z-index:300}.loader
+@media only screen and (min-width: 961px)
+{
+
+	.container
+	{
+		width: 961px;
+	}
+
+	.left
+	{
+		float: left;
+		width: 330px;
+	}
+
+	.right
+	{	
+		float: right;
+		width: 630px;
+		background-color: inherit;
+	}
+}
