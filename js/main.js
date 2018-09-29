@@ -6,14 +6,15 @@
   $(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > 100) {
-      $('.ai-scroll-to-top').fadeIn();
+      $('.st-scroll-to-top').fadeIn();
     } else {
-      $('.ai-scroll-to-top').fadeOut();
+      $('.st-scroll-to-top').fadeOut();
     }
   });
 
   // Smooth scrolling using jQuery easing
   $(document).on('click', 'a.ai-scroll-to-top', function(event) {
+    console.log("event was called");
     var $anchorToTop = $(this);
     $('html, body').stop().animate({
       scrollTop: ($($anchorToTop.attr('href')).offset().top)
@@ -22,7 +23,8 @@
   });
 
   // Smooth scrolling using jQuery easing
-  $(document).on('click', 'a.ai-scroll-to', function(event) {
+  $(document).on('click', 'a.st-scroll-to', function(event) {
+    console.log("OTHER EVENT")
     var $anchorTo = $(this);
     $('html, body').stop().animate({
       scrollTop: ($($anchorTo.attr('href')).offset().top)
