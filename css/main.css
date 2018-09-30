@@ -1,53 +1,3 @@
-/* FONT FAMILY */
-/* COLORS */
-/* indigo blue */
-/* BLACK --> GRAY --> WHITE */
-/* FONT */
-/*
-@include font-mix (
-$color,
-$font-family,
-$font-size,
-$line-height,
-$font-weight,
-$text-transform );
-
-@include font-mix ($gray-darker, $body-font, 15px, 1, 500, none);
-@include font-mix ($gray-darker, $body-font, 15px, 1, 500, uppercase);
-*/
-/* TRANSITION */
-/*
-@include transition ($object, $sec, $type);
-@include transition (all, 0.3s, linear);
-*/
-/* BOX SHADOW */
-/*
-
-@include box-shadow (5px, 5px, 5px, 0px, rgba(51,51,51,0.15));
-
--webkit-box-shadow: 10px 10px 5px 0px rgba(51,51,51,0.15);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(51,51,51,0.15);
-    box-shadow: 10px 10px 5px 0px rgba(51,51,51,0.15);
-
-*/
-/* ROTATE */
-/*
-@include rotate ($deg);
-@include rotate (all);
-*/
-/* BACKGROUND IMAGE */
-/*
-@include bg-image (
-$background-repeat,
-$background-position-horizontal, $background-position-vertical,
-$background-size);
-
-@include bg-image (no-repeat, center, top, auto);
-@include bg-image (no-repeat, center, center, cover);
-@include bg-image (no-repeat, center, bottom, contain);
-*/
-/* CHARSET */
-/* HTML & BODY */
 html,
 body {
   width: 100%;
@@ -66,7 +16,7 @@ html {
 
 /* BODY */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Century Gothic", sans-serif;
   overflow-x: hidden;
   margin: 0;
   padding: 0; }
@@ -78,7 +28,7 @@ h1, h2, h3 {
 
 h1 {
   color: #071013;
-  font-family: "Arial", sans-serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 3rem;
   line-height: 1;
   font-weight: bold;
@@ -87,27 +37,27 @@ h1 {
 
 h2 {
   color: #071013;
-  font-family: "Arial", sans-serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 600;
   text-transform: uppercase;
-  border-top: 0.3rem solid #071013;
+  border-bottom: 0.3rem solid #071013;
   padding-top: 1rem;
-  margin-bottom: 4rem; }
+  margin-bottom: 1rem; }
 
 h3 {
   color: #071013;
-  font-family: "Arial", sans-serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 600;
-  padding-top: 1rem; }
+  padding-top: 1.5rem; }
 
 /* PARAGRAPHS */
 p {
   color: #071013;
-  font-family: "Arial", sans-serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 0.9375rem;
   line-height: 1.75;
   font-weight: 400;
@@ -120,7 +70,7 @@ p + p {
 /* LABELS */
 label {
   color: #071013;
-  font-family: "Arial", sans-serif;
+  font-family: "Times New Roman", sans-serif;
   font-size: 0.9375rem;
   line-height: 1.75;
   font-weight: 400;
@@ -156,27 +106,6 @@ a {
     text-decoration: none;
     outline: 0; }
 
-/* SIDEBAR TITLE */
-.ai-sidebar-title {
-  position: fixed;
-  top: 50%;
-  left: -2rem;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  color: #071013;
-  font-family: "Arial", sans-serif;
-  font-size: 0.6875rem;
-  line-height: 1;
-  font-weight: 600;
-  text-transform: none; }
-
-  @media only screen and (max-width: 600px) {
-    .ai-sidebar-title {
-      display: none;
-    }
-}
-
 
 /* MENU */
 
@@ -200,10 +129,20 @@ a {
 
 @media only screen and (max-width: 600px) {
     .st-menu-list a{
+      font-size:    .6rem;
+      padding: .1rem;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .st-menu-list a{
       font-size:    .75rem;
       padding: .25rem;
     }
 }
+
+
 
 
 /* HEADER */
@@ -212,15 +151,42 @@ header {
   header p {
     line-height: 1.3; }
 
+.st-main-title {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .st-main-title {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+      font-size: .75rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+}
+
 /* MAIN */
 main {
   background-color: #fff; }
   main .st-main-content section {
-    margin-bottom: 6rem; }
-
-/* REFERENCE */
-.tooltip .tooltip-inner {
-  text-align: left; }
+    margin-bottom: 3rem; }
 
 .st-reference-fig-desc {
   margin-top:0 !important;
@@ -238,62 +204,64 @@ main {
   .st-research-list .st-research-list-item .st-research .st-reference-fig-desc {
     font-style: italic; }
 
+.st-title {
+    font-style: italic;;
+}
 
 
 .st-research-list .st-research-list-item + .st-research-list-item {
   border-top: 0px solid #071013; }
 
 /* DOWNLOAD LIST GROUP */
-.ai-download-list .ai-download-list-item {
+.st-download-list .st-download-list-item {
   padding: 1rem 0.5rem; }
-  .ai-download-list .ai-download-list-item:first-of-type {
+  .st-download-list .st-download-list-item:first-of-type {
     border-top: 1px solid #071013; }
-  .ai-download-list .ai-download-list-item:last-of-type {
+  .st-download-list .st-download-list-item:last-of-type {
     padding-bottom: 0; }
-  .ai-download-list .ai-download-list-item .ai-download-link a {
+  .st-download-list .st-download-list-item .st-download-link a {
     text-decoration: none; }
-    .ai-download-list .ai-download-list-item .ai-download-link a:hover, .ai-download-list .ai-download-list-item .ai-download-link a:focus, .ai-download-list .ai-download-list-item .ai-download-link a:active {
+    .st-download-list .st-download-list-item .st-download-link a:hover, .st-download-list .st-download-list-item .st-download-link a:focus, .st-download-list .st-download-list-item .st-download-link a:active {
       text-decoration: none; }
 
-.ai-download-list .ai-download-list-item + .ai-download-list-item {
+.st-download-list .st-download-list-item + .st-download-list-item {
   border-top: 1px solid #071013; }
 
-/* CREDITS LIST GROUP */
-.ai-credits-list {
-  padding-top: 1rem;
-  border-top: 1px solid #071013; }
-  .ai-credits-list .ai-credits-list-item {
-    padding: 0.25rem; }
-    .ai-credits-list .ai-credits-list-item:last-of-type {
-      padding-bottom: 0; }
+.st-fig-wrapper {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.st-fig-wrapper > .st-reference-fig-desc {
+  font-weight: bold;
+}
+
 
 /* SCROLL TO TOP button*/
-.ai-scroll-to-top {
+.st-scroll-to-top {
   position: fixed;
   right: 0.75rem;
   bottom: 0.75rem;
   width: 2.5rem;
   height: 2.5rem;
   text-align: center;
-  border-style: solid;
-  border-width: 1px;
   background: #fff;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(51, 51, 51, 0.35);
   -moz-box-shadow: 0px 1px 3px 0px rgba(51, 51, 51, 0.35);
   box-shadow: 0px 1px 3px 0px rgba(51, 51, 51, 0.35);
   z-index: 256; }
-  .ai-scroll-to-top.ai-scroll-to {
+  .st-scroll-to-top.st-scroll-to {
     display: none; }
-  .ai-scroll-to-top:hover, .ai-scroll-to-top:focus {
+  .st-scroll-to-top:hover, .st-scroll-to-top:focus {
     color: #fff; }
-  .ai-scroll-to-top:hover {
-    background: #071013; }
-  .ai-scroll-to-top i {
+  .st-scroll-to-top:hover {
+   }
+  .st-scroll-to-top i {
     font-size: 1.75rem;
     line-height: 1.3; }
 
 
- .ai-scroll-to-top i {
+ .st-scroll-to-top i {
     color: black;
     font-size: 1.75rem;
     line-height: 1.3;

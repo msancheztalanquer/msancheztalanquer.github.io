@@ -13,7 +13,7 @@
   });
 
   // Smooth scrolling using jQuery easing
-  $(document).on('click', 'a.ai-scroll-to-top', function(event) {
+  $(document).on('click', 'a.st-scroll-to-top', function(event) {
     console.log("event was called");
     var $anchorToTop = $(this);
     $('html, body').stop().animate({
