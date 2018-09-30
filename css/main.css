@@ -72,7 +72,7 @@ body {
   padding: 0; }
 
 /* HEADLINES */
-h1, h2 {
+h1, h2, h3 {
   margin-top: 0;
   margin-bottom: 0; }
 
@@ -95,6 +95,14 @@ h2 {
   border-top: 0.3rem solid #071013;
   padding-top: 1rem;
   margin-bottom: 4rem; }
+
+h3 {
+  color: #071013;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 600;
+  padding-top: 1rem; }
 
 /* PARAGRAPHS */
 p {
@@ -165,8 +173,8 @@ a {
 
   @media only screen and (max-width: 600px) {
     .ai-sidebar-title {
-  display: none;
-  }
+      display: none;
+    }
 }
 
 
@@ -190,6 +198,13 @@ a {
   padding: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+    .st-menu-list a{
+      font-size:    .75rem;
+      padding: .25rem;
+    }
+}
+
 
 /* HEADER */
 header {
@@ -211,19 +226,21 @@ main {
   font-style: italic; }
 
 /* REFERENCE LIST GROUP */
-.ai-reference-list .ai-reference-list-item {
+.st-research-list .st-research-list-item {
   padding: 1rem 0.5rem; }
-  .ai-reference-list .ai-reference-list-item:first-of-type {
+  .st-research-list .st-research-list-item:first-of-type {
     border-top: 1px solid #071013; }
-  .ai-reference-list .ai-reference-list-item:last-of-type {
+  .st-research-list .st-research-list-item:last-of-type {
     padding-bottom: 0; }
-  .ai-reference-list .ai-reference-list-item .ai-reference .ai-reference-num {
+  .st-research-list .st-research-list-item .st-research .st-research-num {
     text-decoration: none; }
-  .ai-reference-list .ai-reference-list-item .ai-reference .st-reference-fig-desc {
+  .st-research-list .st-research-list-item .st-research .st-reference-fig-desc {
     font-style: italic; }
 
-.ai-reference-list .ai-reference-list-item + .ai-reference-list-item {
-  border-top: 1px solid #071013; }
+
+
+.st-research-list .st-research-list-item + .st-research-list-item {
+  border-top: 0px solid #071013; }
 
 /* DOWNLOAD LIST GROUP */
 .ai-download-list .ai-download-list-item {
@@ -279,4 +296,12 @@ main {
     color: black;
     font-size: 1.75rem;
     line-height: 1.3;
+}
+
+.st-education + .st-education{
+    margin-top: 1rem;
+}
+
+.st-education p{
+    margin-top: 0;
 }
