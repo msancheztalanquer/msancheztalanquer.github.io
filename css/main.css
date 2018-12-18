@@ -29,7 +29,7 @@ h1, h2, h3 {
 h1 {
   color: #071013;
   font-family: "Century Gothic", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1;
   font-weight: bold;
   text-transform: none;
@@ -194,7 +194,7 @@ main {
 
 /* REFERENCE LIST GROUP */
 .st-research-list .st-research-list-item {
-  padding: 1rem 0.5rem; }
+  padding: 1.5rem 0.5rem; }
   .st-research-list .st-research-list-item:first-of-type {
     border-top: 1px solid #071013; }
   .st-research-list .st-research-list-item:last-of-type {
@@ -214,7 +214,7 @@ main {
 
 /* DOWNLOAD LIST GROUP */
 .st-download-list .st-download-list-item {
-  padding: 1rem 0.5rem; }
+  padding: 1.5rem 0.5rem; }
   .st-download-list .st-download-list-item:first-of-type {
     border-top: 1px solid #071013; }
   .st-download-list .st-download-list-item:last-of-type {
