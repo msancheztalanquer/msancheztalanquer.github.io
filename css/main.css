@@ -267,7 +267,7 @@ main {
     line-height: 1.3;
 }
 
-.st-education + .st-cv{
+.st-cv + .st-cv{
     margin-top: 1rem;
 }
 
