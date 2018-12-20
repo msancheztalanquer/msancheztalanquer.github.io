@@ -194,7 +194,7 @@ main {
 
 /* REFERENCE LIST GROUP */
 .st-research-list .st-research-list-item {
-  padding: 1rem 1rem; }
+  padding: 0.6rem 0.6rem; }
   .st-research-list .st-research-list-item:first-of-type {
     border-top: 1px solid #071013; }
   .st-research-list .st-research-list-item:last-of-type {
