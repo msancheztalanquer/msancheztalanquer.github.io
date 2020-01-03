@@ -189,7 +189,7 @@ main {
     margin-bottom: 3rem; }
 
 .st-reference-fig-desc {
-  margin-top:1 !important;
+  margin-top:0 !important;
   font-style: italic; }
 
 /* REFERENCE LIST GROUP */
@@ -228,7 +228,7 @@ main {
   border-top: 1px solid #071013; }
 
 .st-fig-wrapper {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
