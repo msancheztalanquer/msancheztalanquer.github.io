@@ -54,13 +54,21 @@ h3 {
   font-weight: 600;
   padding-top: 1.5rem; }
 
+h4 {
+  color: #071013;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  font-weight: 600;
+  padding-top: 1.5rem; }
+
 /* PARAGRAPHS */
 p {
   color: #071013;
   font-family: "Century Gothic", sans-serif;
   font-size: 0.9375rem;
   line-height: 1.75;
-  font-weight: 400;
+  font-weight: 440;
   text-transform: none;
   margin-bottom: 0; }
 
